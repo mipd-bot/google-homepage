@@ -14,11 +14,11 @@
     }
     #topnav{
         list-style-type: none;
-        margin: 5;
-        padding: 10;
+        margin: 5px;
+        padding: 8px;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 97%;
     }
     li{
         float:left;
@@ -26,7 +26,7 @@
     li a{
         display: block;
         padding: 10px 15px;
-        color: black;
+        color: rgb(39, 39, 39);
         text-decoration: none;
     }
     li a:hover {
@@ -39,7 +39,7 @@
         position: fixed;
         bottom: 0px;
         height: 45px;
-        width: 100%;
+        width: 97%;
         background-color: rgb(224, 223, 223);
         border: 1px solid rgb(189, 189, 189)
     }
@@ -68,14 +68,25 @@
         height: 38px;
         margin-bottom: 15px;
     }
-    button{
+    #greybutton{
         background-color: rgb(240, 240, 240);
+        border-radius: 1px;
         border-style: none;
         color: rgb(109, 108, 108);
         height: 30px;
         width: 120px;
         margin-right: 10px;
         margin-bottom: 20px;
+    }
+    #signbutton{
+        background-color: rgb(64, 133, 223);
+        border-radius: 1px;
+        border-style: none;
+        color: white;
+        height: 30px;
+        width: 70px;
+        margin-right: 0px;
+        margin-bottom: 0px;
     }
     
 </style>
@@ -91,10 +102,10 @@
             <ul id="topnav">
                 <li><a href=#>About</a></li>
                 <li><a href=#>Store</a></li>
-                <li style="float:right"><a href=#>Gmail</a></li>
-                <li style="float:right"><a href=#>Images</a></li>
+                <li style="float:right"><a href=#><button type="submit" id="signbutton"><b>Sign In</b></button></a></li>
                 <li style="float:right"><a href=#>Menu</a></li>
-                <li style="float:right"><a href=#>M</a></li>
+                <li style="float:right"><a href=#>Images</a></li>
+                <li style="float:right"><a href=#>Gmail</a></li>
             </ul>
         </nav>
     </header>
@@ -103,8 +114,8 @@
     <form action="/url-where-you-want-to-submit-form-data">
         <input type="text" placeholder="Google whatever you want right here">
     </form>
-    <button type="submit">Google Search</button>
-    <button type="submit">I'm Feeling Lucky</button>
+    <button type="submit" id="greybutton">Google Search</button>
+    <button type="submit" id="greybutton">I'm Feeling Lucky</button>
     <p>Google offered in: Français</p>
 </div>
 <footer>
